@@ -13,7 +13,9 @@
 #include "easy/sqrt/Sqrt.h"
 #include "easy/reverse_linked_list/ReverseLinkedList.h"
 #include "common/data_structure/list/ListSample.h"
+#include "common/string/TestStringUltis.h"
+#include "easy/125.vaid_palindrome/ValidPalindrome .h"
 
 int main() {
-    RunListSample();
+    RunIsPalinDrome();
 }

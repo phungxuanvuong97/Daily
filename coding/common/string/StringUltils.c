@@ -2,6 +2,9 @@
 // Created by phung vuong on 03/09/2023.
 //
 
+#include <stdlib.h>
+#include <assert.h>
+#include <ctype.h>
 #include "StringUltils.h"
 
 int str_length(char str[]) {
@@ -13,4 +16,39 @@ int str_length(char str[]) {
 
     // returning the character count of the string
     return count;
+}
+
+char* removeNonAlphanumericCharacters(char* s, int stringSize){
+
+    assert(stringSize > 0);
+
+    char* newString = malloc(sizeof(char) * stringSize);
+
+    int currentIndex = 0;
+
+    for(int i=0;i<stringSize;i++){
+        if(isalpha(s[i]) || isnumber(s[i])){
+            newString[currentIndex] = s[i];
+            currentIndex++;
+        }
+    }
+
+    if(currentIndex == 0){
+        return s;
+    }
+
+    newString = (char*)realloc(newString, sizeof (char) * currentIndex);
+    return newString;
+
+}
+
+void toLowerCase(char* s, int strLen){
+    assert(strLen > 0);
+
+    for(int i=0;i<strLen;i++){
+        if(s[i] != NULL){
+            s[i] = tolower(s[i]);
+        }
+    }
+
 }
