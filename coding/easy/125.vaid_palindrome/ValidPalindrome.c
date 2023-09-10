@@ -3,7 +3,7 @@
 //
 
 #include <printf.h>
-#include "ValidPalindrome .h"
+#include "ValidPalindrome.h"
 #include "../../common/string/StringUltils.h"
 
 int isPalindrome(char * s){
@@ -42,19 +42,19 @@ void RunIsPalinDrome(){
 
     char* s1 = "A man, a plan, a canal: Panama";
 
-    //int result1 = isPalindrome(s1);
+    int result1 = isPalindrome(s1);
 
-    //printf("result1: %d \n", result1);
+    printf("result1: %d \n", result1);
 
-    //char* s2 = "race a car";
+    char* s2 = "race a car";
 
-    //int result2 = isPalindrome(s2);
+    int result2 = isPalindrome(s2);
 
-    //printf("result2: %d", result2);
+    printf("result2: %d \n", result2);
 
     char* s3 = " ";
 
     int result3 = isPalindrome(s3);
 
-    printf("result3: %d", result3);
+    printf("result3: %d \n", result3);
 }

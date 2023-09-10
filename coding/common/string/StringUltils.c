@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <assert.h>
 #include <ctype.h>
+#include <string.h>
 #include "StringUltils.h"
 
 int str_length(char str[]) {
@@ -27,14 +28,14 @@ char* removeNonAlphanumericCharacters(char* s, int stringSize){
     int currentIndex = 0;
 
     for(int i=0;i<stringSize;i++){
-        if(isalpha(s[i]) || isnumber(s[i])){
+        if(isalpha(s[i]) || isdigit(s[i])){
             newString[currentIndex] = s[i];
             currentIndex++;
         }
     }
 
     if(currentIndex == 0){
-        return s;
+        return strdup("");
     }
 
     newString = (char*)realloc(newString, sizeof (char) * currentIndex);

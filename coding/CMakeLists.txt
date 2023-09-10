@@ -57,8 +57,8 @@ add_executable(IOTLeetCode main.c
         common/algorithms/pubble_sort/BubbleSort.h
         common/algorithms/pubble_sort/TestBubbleSort.c
         common/algorithms/pubble_sort/TestBubbleSort.h
-        "easy/125.vaid_palindrome/ValidPalindrome .c"
-        "easy/125.vaid_palindrome/ValidPalindrome .h"
+        "easy/125.vaid_palindrome/ValidPalindrome.c"
+        "easy/125.vaid_palindrome/ValidPalindrome.h"
         common/string/TestStringUltis.c
         common/string/TestStringUltis.h
 )
