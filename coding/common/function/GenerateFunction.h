@@ -1,0 +1,10 @@
+//
+// Created by phung vuong on 05/09/2023.
+//
+
+#ifndef IOTLEETCODE_GENERATEFUNCTION_H
+#define IOTLEETCODE_GENERATEFUNCTION_H
+
+#define DECLARE_RUN_FUNCTION(Name) void Run##Name();
+
+#endif //IOTLEETCODE_GENERATEFUNCTION_H
