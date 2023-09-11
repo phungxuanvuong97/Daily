@@ -61,4 +61,6 @@ add_executable(IOTLeetCode main.c
         "easy/125.vaid_palindrome/ValidPalindrome.h"
         common/string/TestStringUltis.c
         common/string/TestStringUltis.h
+        easy/136.single_number/SingleNumber.c
+        easy/136.single_number/SingleNumber.h
 )
