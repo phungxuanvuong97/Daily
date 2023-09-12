@@ -16,7 +16,8 @@
 #include "common/string/TestStringUltis.h"
 #include "easy/125.vaid_palindrome/ValidPalindrome.h"
 #include "easy/136.single_number/SingleNumber.h"
+#include "easy/169.majority_element/MajorityElement.h"
 
 int main() {
-    RunSingleNumber();
+    RunMajorityElement();
 }

@@ -63,4 +63,6 @@ add_executable(IOTLeetCode main.c
         common/string/TestStringUltis.h
         easy/136.single_number/SingleNumber.c
         easy/136.single_number/SingleNumber.h
+        easy/169.majority_element/MajorityElement.c
+        easy/169.majority_element/MajorityElement.h
 )
