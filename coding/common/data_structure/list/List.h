@@ -16,5 +16,4 @@ typedef struct ListNodeItem List;
 
 List* CreateList();
 void AddToList(List *list, int value);
-
 #endif //IOTLEETCODE_LIST_H
