@@ -2,7 +2,7 @@
 // Created by phung vuong on 10/09/2023.
 //
 
-#include <printf.h>
+#include <stdio.h>
 #include "TestStringUltis.h"
 #include "StringUltils.h"
 
