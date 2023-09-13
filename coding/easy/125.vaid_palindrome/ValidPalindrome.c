@@ -2,7 +2,7 @@
 // Created by phung vuong on 10/09/2023.
 //
 
-#include <printf.h>
+#include <stdio.h>
 #include "ValidPalindrome.h"
 #include "../../common/string/StringUltils.h"
 
