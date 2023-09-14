@@ -6,7 +6,7 @@
 #include "RemoveDuplicateElement.h"
 #include "../../common/array/ArrayUtils.h"
 #include "../../common/printing/printing.h"
-#include "../../common/data_structure/map/sc_map.h"
+#include "../../common/data_structure/sc_map/sc_map.h"
 
 int removeDuplicates(int* nums, int numsSize){
 
@@ -14,7 +14,7 @@ int removeDuplicates(int* nums, int numsSize){
 
     sc_map_init_ints(&map, 0, 0);
 
-    // init map
+    // init sc_map
     for(int i=0;i<numsSize;i++){
         sc_map_put_int(&map,nums[i], 0);
     }

@@ -95,8 +95,8 @@
 	} while (0)
 
 /**
- *   Init queue. Call sc_queue_oom(q) to see if memory allocation succeeded.
- *   @param q queue
+ *   Init sc_queue. Call sc_queue_oom(q) to see if memory allocation succeeded.
+ *   @param q sc_queue
  */
 #define sc_queue_init(q)                                                       \
 	do {                                                                   \
@@ -111,8 +111,8 @@
 	} while (0)
 
 /**
- *   Destroy queue
- *   @param q queue
+ *   Destroy sc_queue
+ *   @param q sc_queue
  */
 #define sc_queue_term(q)                                                       \
 	do {                                                                   \
@@ -125,20 +125,20 @@
 	} while (0)
 
 /**
- * @param q queue
+ * @param q sc_queue
  * @return true if last add operation failed, false otherwise.
  */
 #define sc_queue_oom(q) ((q)->oom)
 
 /**
- *   @param q queue
+ *   @param q sc_queue
  *   @return  element count
  */
 #define sc_queue_size(q) (((q)->last - (q)->first) & ((q)->cap - 1))
 
 /**
- * Clear the queue without deallocating underlying memory.
- * @param q queue
+ * Clear the sc_queue without deallocating underlying memory.
+ * @param q sc_queue
  */
 #define sc_queue_clear(q)                                                      \
 	do {                                                                   \
@@ -148,25 +148,25 @@
 	} while (0)
 
 /**
- *   @param q queue
- *   @return true if queue is empty
+ *   @param q sc_queue
+ *   @return true if sc_queue is empty
  */
 #define sc_queue_empty(q) (((q)->last == (q)->first))
 
 /**
- * @param q queue
- * @return  index of the first element. If queue is empty, result is undefined.
+ * @param q sc_queue
+ * @return  index of the first element. If sc_queue is empty, result is undefined.
  */
 #define sc_queue_first(q) ((q)->first)
 
 /**
- * @param q queue
- * @return  index of the last element. If queue is empty, result is undefined.
+ * @param q sc_queue
+ * @return  index of the last element. If sc_queue is empty, result is undefined.
  */
 #define sc_queue_last(q) ((q)->last)
 
 /**
- * @param q queue
+ * @param q sc_queue
  * @param i index
  * @return  index of the next element after i, if i is the last element,
  *            result is undefined.
@@ -180,27 +180,27 @@
  *        printf("%d" \n, sc_queue_at(q, i));
  *   }
  *
- *   @param q queue
+ *   @param q sc_queue
  *   @return element at index i
  */
 #define sc_queue_at(q, i) (q)->elems[(((q)->first) + (i)) & ((q)->cap - 1)]
 
 /**
- *   @param q queue
- *   @return  peek first element, if queue is empty, result is undefined
+ *   @param q sc_queue
+ *   @return  peek first element, if sc_queue is empty, result is undefined
  */
 #define sc_queue_peek_first(q) ((q)->elems[(q)->first])
 
 /**
- *   @param q queue
- *   @return  peek last element, if queue is empty, result is undefined
+ *   @param q sc_queue
+ *   @return  peek last element, if sc_queue is empty, result is undefined
  */
 #define sc_queue_peek_last(q) (q)->elems[((q)->last - 1) & ((q)->cap - 1)]
 
 /**
  * Call sc_queue_oom(q) after this function to check out of memory condition.
  *
- * @param q    queue
+ * @param q    sc_queue
  * @param elem elem to be added at the end of the list
  */
 #define sc_queue_add_last(q, elem)                                             \
@@ -215,9 +215,9 @@
 	} while (0)
 
 /**
- * @param q queue
- * @return  delete the last element from the queue and return its value.
- *          If queue is empty, result is undefined.
+ * @param q sc_queue
+ * @return  delete the last element from the sc_queue and return its value.
+ *          If sc_queue is empty, result is undefined.
  */
 #define sc_queue_del_last(q)                                                   \
 	((q)->elems[((q)->last = ((q)->last - 1) & ((q)->cap - 1))])
@@ -225,7 +225,7 @@
 /**
  * Call sc_queue_oom(q) after this function to check out of memory condition.
  *
- * @param q    queue.
+ * @param q    sc_queue.
  * @param elem elem to be added at the head of the list.
  */
 #define sc_queue_add_first(q, elem)                                            \
@@ -248,9 +248,9 @@ static inline size_t sc_queue_inc_first(size_t *first, size_t cap)
 }
 
 /**
- * @param q queue
- * @return  delete the first element from the queue and return its value.
- *          If queue is empty, result is undefined.
+ * @param q sc_queue
+ * @return  delete the first element from the sc_queue and return its value.
+ *          If sc_queue is empty, result is undefined.
  */
 #define sc_queue_del_first(q)                                                  \
 	(q)->elems[sc_queue_inc_first(&(q)->first, (q)->cap)]
@@ -258,11 +258,11 @@ static inline size_t sc_queue_inc_first(size_t *first, size_t cap)
 /**
  *  For each loop,
  *
- *  struct sc_queue_int queue;
- *  sc_queue_init(&queue, 4);"
+ *  struct sc_queue_int sc_queue;
+ *  sc_queue_init(&sc_queue, 4);"
  *
  *  int elem;
- *  sc_queue_foreach(&queue, elem) {
+ *  sc_queue_foreach(&sc_queue, elem) {
  *      printf("Elem : %d \n, elem);
  *  }
  */
