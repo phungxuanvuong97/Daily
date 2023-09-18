@@ -4,7 +4,7 @@
 
 #include "SingleNumber.h"
 #include "../../common/algorithms/pubble_sort/BubbleSort.h"
-#include "../../common/data_structure/map/sc_map.h"
+#include "../../common/data_structure/sc_map/sc_map.h"
 
 int singleNumber(int* nums, int numsSize){
 

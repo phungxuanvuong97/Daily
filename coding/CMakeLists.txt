@@ -18,17 +18,17 @@ add_executable(IOTLeetCode main.c
         easy/longest_common_prefix/LongestCommonPrefix.h
         easy/valid_parenthese/ValidParenthese.c
         easy/valid_parenthese/ValidParenthese.h
-        common/data_structure/queue/sc_queue.h
-        common/data_structure/queue/queue_example.c
-        common/data_structure/queue/queue_example.h
+        common/data_structure/sc_queue/sc_queue.h
+        common/data_structure/sc_queue/queue_example.c
+        common/data_structure/sc_queue/queue_example.h
         easy/merge_two_sorted_array/MergeTwoSortedArray.c
         easy/merge_two_sorted_array/MergeTwoSortedArray.h
         easy/remove_duplicate_element/RemoveDuplicateElement.c
         easy/remove_duplicate_element/RemoveDuplicateElement.h
-        common/data_structure/map/sc_map.c
-        common/data_structure/map/sc_map.h
-        common/data_structure/map/map_example.c
-        common/data_structure/map/map_example.h
+        common/data_structure/sc_map/sc_map.c
+        common/data_structure/sc_map/sc_map.h
+        common/data_structure/sc_map/map_example.c
+        common/data_structure/sc_map/map_example.h
         easy/first_occation/FirstOccurenet.c
         easy/first_occation/FirstOccurenet.h
         easy/search_inserted/SearchInsert.c
@@ -65,4 +65,9 @@ add_executable(IOTLeetCode main.c
         easy/136.single_number/SingleNumber.h
         easy/169.majority_element/MajorityElement.c
         easy/169.majority_element/MajorityElement.h
+        easy/88.merge_sorted_array/MegeSortedArray.c
+        easy/88.merge_sorted_array/MegeSortedArray.h
+        common/data_structure/sc_array/sc_array.h
+        common/data_structure/sc_array/ArrayExample.c
+        common/data_structure/sc_array/ArrayExample.h
 )

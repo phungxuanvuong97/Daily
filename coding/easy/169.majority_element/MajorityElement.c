@@ -3,7 +3,7 @@
 //
 
 #include "MajorityElement.h"
-#include "../../common/data_structure/map/sc_map.h"
+#include "../../common/data_structure/sc_map/sc_map.h"
 
 int majorityElement(int* nums, int numsSize){
     int key, value;
