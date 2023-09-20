@@ -11,7 +11,6 @@
 #include "easy/length_of_last_word/LengthOfLastWord.h"
 #include "easy/plus_one/PlusOne.h"
 #include "easy/sqrt/Sqrt.h"
-#include "easy/reverse_linked_list/ReverseLinkedList.h"
 #include "common/data_structure/list/ListSample.h"
 #include "common/string/TestStringUltis.h"
 #include "easy/125.vaid_palindrome/ValidPalindrome.h"
@@ -19,7 +18,8 @@
 #include "easy/169.majority_element/MajorityElement.h"
 #include "common/data_structure/sc_array/ArrayExample.h"
 #include "easy/88.merge_sorted_array/MegeSortedArray.h"
+#include "easy/83.remove_duplicates_from_sorted_list/RemoveDuplicateLinkedlist.h"
 
 int main() {
-    RunMergeSortedArray();
+    RunDeleteDuplicate();
 }
