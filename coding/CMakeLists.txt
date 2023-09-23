@@ -72,4 +72,6 @@ add_executable(IOTLeetCode main.c
         common/data_structure/sc_array/ArrayExample.h
         easy/83.remove_duplicates_from_sorted_list/RemoveDuplicateLinkedlist.c
         easy/83.remove_duplicates_from_sorted_list/RemoveDuplicateLinkedlist.h
+        easy/1290.binary_to_decimal/BinaryToDecimal.c
+        easy/1290.binary_to_decimal/BinaryToDecimal.h
 )
