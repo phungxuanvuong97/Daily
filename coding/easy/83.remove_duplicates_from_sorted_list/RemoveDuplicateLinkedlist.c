@@ -2,8 +2,8 @@
 // Created by pxvuong on 9/20/2023.
 //
 
-#include <malloc.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include "RemoveDuplicateLinkedlist.h"
 
 struct ListNode* deleteDuplicates(struct ListNode* head){

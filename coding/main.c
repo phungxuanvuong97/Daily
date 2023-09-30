@@ -19,7 +19,8 @@
 #include "common/data_structure/sc_array/ArrayExample.h"
 #include "easy/88.merge_sorted_array/MegeSortedArray.h"
 #include "easy/83.remove_duplicates_from_sorted_list/RemoveDuplicateLinkedlist.h"
+#include "easy/876.middle_linked/MiddleLinkedList.h"
 
 int main() {
-    RunDeleteDuplicate();
+    RunMiddleNode();
 }
