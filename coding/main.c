@@ -20,7 +20,8 @@
 #include "easy/88.merge_sorted_array/MegeSortedArray.h"
 #include "easy/83.remove_duplicates_from_sorted_list/RemoveDuplicateLinkedlist.h"
 #include "easy/876.middle_linked/MiddleLinkedList.h"
+#include "easy/203.remove_linked_list/RemoveLinkedList.h"
 
 int main() {
-    RunMiddleNode();
+    RunRemoveListNode();
 }

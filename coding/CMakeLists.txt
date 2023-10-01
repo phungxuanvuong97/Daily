@@ -76,4 +76,6 @@ add_executable(IOTLeetCode main.c
         easy/1290.binary_to_decimal/BinaryToDecimal.h
         easy/876.middle_linked/MiddleLinkedList.c
         easy/876.middle_linked/MiddleLinkedList.h
+        easy/203.remove_linked_list/RemoveLinkedList.c
+        easy/203.remove_linked_list/RemoveLinkedList.h
 )
