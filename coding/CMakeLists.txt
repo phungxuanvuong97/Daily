@@ -74,4 +74,6 @@ add_executable(IOTLeetCode main.c
         easy/83.remove_duplicates_from_sorted_list/RemoveDuplicateLinkedlist.h
         easy/1290.binary_to_decimal/BinaryToDecimal.c
         easy/1290.binary_to_decimal/BinaryToDecimal.h
+        easy/705.design_hashset/DesginHashset.c
+        easy/705.design_hashset/DesginHashset.h
 )
