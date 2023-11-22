@@ -74,4 +74,7 @@ add_executable(IOTLeetCode main.c
         easy/83.remove_duplicates_from_sorted_list/RemoveDuplicateLinkedlist.h
         easy/1290.binary_to_decimal/BinaryToDecimal.c
         easy/1290.binary_to_decimal/BinaryToDecimal.h
+        easy/203.remove_linked_list/RemoveLinkedList.c
+        easy/202.happy_number/HappyNumber.c
+        easy/202.happy_number/HappyNumber.h
 )

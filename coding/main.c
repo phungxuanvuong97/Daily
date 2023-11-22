@@ -21,7 +21,8 @@
 #include "easy/83.remove_duplicates_from_sorted_list/RemoveDuplicateLinkedlist.h"
 #include "easy/876.middle_linked/MiddleLinkedList.h"
 #include "easy/203.remove_linked_list/RemoveLinkedList.h"
+#include "easy/202.happy_number/HappyNumber.h"
 
 int main() {
-    RunRemoveListNode();
+    RunHappyNumber();
 }
